@@ -25,7 +25,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 
                      lg:hover:bg-transparent lg:border-0 lg:p-0 
-                     ${isActive ? "text-orange-700" : "hover:text-orange-500"}`
+                     ${isActive ? "text-orange-700" : "text-grey-700"}`
                   }
                 >
                   Home
@@ -37,7 +37,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 
                      lg:hover:bg-transparent lg:border-0 lg:p-0 
-                     ${isActive ? "text-orange-700" : "hover:text-orange-500"}`
+                     ${isActive ? "text-orange-700" : "text-grey-700"}`
                   }
                 >
                   About
@@ -45,14 +45,26 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/cantact"
+                  to="/contact"
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 
                      lg:hover:bg-transparent lg:border-0 lg:p-0 
-                     ${isActive ? "text-orange-700" : "hover:text-orange-500"}`
+                     ${isActive ? "text-orange-700" : "text-grey-700"}`
                   }
                 >
-                  Cantact
+                  Contact
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/user"
+                  className={({ isActive }) =>
+                    `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 
+                     lg:hover:bg-transparent lg:border-0 lg:p-0 
+                     ${isActive ? "text-orange-700" : "text-grey-700"}`
+                  }
+                >
+                  User
                 </NavLink>
               </li>
               <li>
@@ -61,7 +73,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 
                      lg:hover:bg-transparent lg:border-0 lg:p-0 
-                     ${isActive ? "text-orange-700" : "hover:text-orange-500"}`
+                     ${isActive ? "text-orange-700" : "text-grey-700"}`
                   }
                 >
                   Github
