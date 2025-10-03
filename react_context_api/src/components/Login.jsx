@@ -9,8 +9,9 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    setUser({ username, password });
+    setUser({ username, password }); //setUser is a function that is passed down from the UserContext
   };
+
   return (
     <div>
       <h1>Login</h1>
